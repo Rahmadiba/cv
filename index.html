@@ -172,13 +172,37 @@
       display: none;
     }
   }
+  .lang-btn {
+    position: fixed;
+    top: 74px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid #000000;
+    border-radius: 8px;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--font-main);
+    transition: background 0.2s, transform 0.15s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .lang-btn:hover { background: #f0f0f0; transform: scale(1.05); }
+  .lang-btn:active { transform: scale(0.95); }
+
+  @media print {
+    .lang-btn { display: none; }
+  }
 </style>
 </head>
 <body>
 
   <header>
     <h1>AFIFAH RAHMA ADIBAH SAMUDRA</h1>
-    <p class="role-title">Web Developer and Aspiring SQA Analyst</p>
+    <p class="role-title">QA Tester | Technical Writer | Business Process Analyst</p>
     <p class="contact-line">Bandar Lampung, Lampung, Indonesia (Open to Relocation)</p>
     <p class="contact-line">+62 851-8708-0568&nbsp;&nbsp;|&nbsp;&nbsp;afifahsamudra9@gmail.com</p>
   </header>
@@ -187,14 +211,15 @@
 
   <section>
     <h2>Professional Summary</h2>
-    <p class="summary">Entry-level and enthusiastic aspiring Software Quality Assurance (SQA) Analyst with a solid foundation in the Software Development Life Cycle (SDLC). Experienced in designing test cases, conducting web and mobile application testing, and tracking bugs to ensure system functionality and quality. Detail-oriented with strong persistence to keep learning, quick to adapt to new technologies, and ready to contribute collaboratively within a team.</p>
+    <p class="summary">Informatics Management graduate (GPA 3.68/4.00) with hands-on experience across the Software Development Life Cycle (SDLC) in business process analysis, manual software testing, and technical documentation. Experienced in turning manual or unstructured processes into reliable systems, including a web-based inventory system with automated stock recalculation and a PPOB payment application tested through 50+ test cases. Skilled in test case design, bug reporting, UAT, data processing with Microsoft Excel, and writing clear documentation for developers and stakeholders. Detail-oriented, adaptable, and ready to contribute to QA, documentation, and process improvement teams.</p>
   </section>
 
   <section>
     <h2>Technical Skills</h2>
-    <p class="skills-row"><span class="label">Testing &amp; QA:</span> Test Scenario &amp; Test Case Design, Test Planning, Functional Testing, System Testing, User Acceptance Testing (UAT)</p>
-    <p class="skills-row"><span class="label">Process &amp; Documentation:</span> Software Development Life Cycle (SDLC), Test Documentation / Test Report, Business Requirement Analysis</p>
-    <p class="skills-row"><span class="label">Tools &amp; Platforms:</span> Google Workspace, Microsoft Excel, Microsoft Office</p>
+    <p class="skills-row"><span class="label">Testing &amp; QA:</span> Test Scenario &amp; Test Case Design, Manual Testing, Functional Testing, Black Box Testing, System Testing, User Acceptance Testing (UAT), Bug Reporting</p>
+    <p class="skills-row"><span class="label">Documentation:</span> Technical Documentation, Test Report, Test Plan, Project Documentation, Business Requirement Analysis</p>
+    <p class="skills-row"><span class="label">Process &amp; Analysis:</span> Business Process Analysis, Workflow Design, Process Automation, Software Development Life Cycle (SDLC), Agile</p>
+    <p class="skills-row"><span class="label">Data &amp; Tools:</span> Data Processing &amp; Monitoring, Microsoft Excel, SQL (MySQL), Laravel (PHP), Google Workspace, Microsoft Office</p>
   </section>
 
   <section>
@@ -207,9 +232,8 @@
       </div>
       <p class="entry-sub">Satgas P4GN - Universitas Lampung, Bandar Lampung, Indonesia</p>
       <ul>
-        <li>Analyzed business requirements for three user roles (Client, Counselor, Admin) and translated them into functional specifications following the SDLC process.</li>
-        <li>Conducted functional testing through Black Box Testing and User Acceptance Testing (UAT) to validate system functionality, identify bugs, and ensure platform quality prior to release.</li>
-        <li>Delivered a secure, privacy-compliant, and centrally managed application (satgasp4gn.unila.ac.id).</li>
+        <li>Analyzed requirements for three user roles (Client, Counselor, Admin) and translated them into functional specifications and testable scenarios following the SDLC process, ensuring the platform met the needs of each role.</li>
+        <li>Executed Black Box Testing and User Acceptance Testing (UAT), identified and reported bugs before release, and delivered a secure, privacy-compliant, centrally managed application (satgasp4gn.unila.ac.id).</li>
       </ul>
     </div>
 
@@ -220,26 +244,24 @@
       </div>
       <p class="entry-sub">BPKAD, Lampung Tengah, Indonesia</p>
       <ul>
-        <li>Analyzed business processes and designed the system architecture for an inventory management system.</li>
-        <li>Developed a full-stack, end-to-end application using Agile methodology with Laravel (PHP 8.3) and MySQL, including a real-time dashboard and automated stock recalculation.</li>
-        <li>Implemented and refined the system based on direct user feedback, improving the accuracy and efficiency of stock recording.</li>
+        <li>Analyzed the manual stock-recording process and designed the architecture of an inventory management system to replace it.</li>
+        <li>Built a full-stack application with Laravel (PHP 8.3) and MySQL using Agile methodology, including a real-time dashboard and automated stock recalculation, and refined it from direct user feedback, resulting in more accurate and efficient stock recording and monitoring.</li>
       </ul>
     </div>
   </section>
 
   <section>
-    <h2>NOTABLE PROJECT</h2>
+    <h2>Notable Project</h2>
 
     <div class="entry">
       <div class="entry-header">
         <span>Software Tester</span>
         <span class="dates">March 2026 - July 2026</span>
       </div>
-      <p class="entry-sub">DoriPay-Payment Point Online Bank (PPOB) System | Manual Software Tester</p>
+      <p class="entry-sub">DoriPay - Payment Point Online Bank (PPOB) System | Manual Software Tester</p>
       <ul>
-        <li>Performed comprehensive testing across 8 critical modules of the Doripay PPOB (digital payment) application, including purchases, balance top-up via Tripay, transaction history, and finance.</li>
-        <li>Designed and executed 50+ test cases to identify potential bugs in purchase flows, payment gateway integration, and transaction recording.</li>
-        <li>Ensured the stability of financial transaction flows prior to application release.</li>
+        <li>Tested 8 critical modules of a digital payment application, including purchases, balance top-up via Tripay, transaction history, and finance, to reduce the risk of bugs in financial transaction flows.</li>
+        <li>Designed and executed 50+ test cases and documented the findings, uncovering bugs in purchase flows, payment gateway integration, and transaction recording, and ensuring stable financial transactions prior to release.</li>
       </ul>
     </div>
   </section>
@@ -252,9 +274,8 @@
       </div>
       <p class="entry-sub">HIMAKOM Unila - "Project Showcase 2024", Bandar Lampung, Indonesia</p>
       <ul>
-        <li>Served as Core Committee Member and Executive Treasurer for "Project Showcase 2024," an event organized by HIMAKOM Unila.</li> 
-        <li>Led the development of the event concept and activity flow, and designed the budget plan (RAB) with transparent cash flow control and documentation.</li> 
-        <li>Evaluated event execution against planned flow and budget standards, ensuring deliverables met stakeholder expectations and resulted in a smooth, budget-efficient exhibition.</li>
+        <li>Designed the budget plan (RAB), managed cash flow, and maintained complete financial documentation for "Project Showcase 2024," while helping develop the event concept and activity flow.</li>
+        <li>Evaluated execution against the planned flow and budget, resulting in a smooth, budget-efficient exhibition that met stakeholder expectations.</li>
       </ul>
     </div>
   </section>
@@ -275,14 +296,71 @@
       <p class="entry-sub-inline"><strong>Top 10 Finalist - Young Entrepreneur Competition (Wirausaha Muda Pemula), FMIPA Universitas Lampung</strong></p>
       <p class="edu-meta" style="margin-bottom:6px;">2025</p>
       <ul>
-        <li>Developed the "WONTASTIC" business concept, a healthy and practical food solution for students and office workers, featuring preservative-free chicken wontons, digital marketing, and delivery service.</li>
-        <li>Analyzed operational feasibility and prepared a comprehensive business plan.</li>
-        <li>Produced a viable business plan targeting 10,800 units in the first year, with an ROI of 174.9% and a payback period of 1.26 months.</li>
+        <li>Developed the "WONTASTIC" concept of preservative-free chicken wontons with digital marketing and delivery service, offering healthy and practical food for students and office workers.</li>
+        <li>Analyzed operational feasibility and prepared a business plan targeting 10,800 units in the first year, with an ROI of 174.9% and a payback period of 1.26 months.</li>
       </ul>
     </div>
   </section>
 
-  <button class="print-btn" onclick="window.print()" title="Cetak PDF">🖨️</button>
+  <button class="print-btn" onclick="window.print()" title="Print / Save as PDF">&#128424;</button>
+
+  <button class="lang-btn" id="langBtn" onclick="toggleLang()" title="Terjemahkan ke Bahasa Indonesia">ID</button>
+
+  <script>
+  (function () {
+    var q = function (s) { return Array.prototype.slice.call(document.querySelectorAll(s)); };
+    var sets = [
+      [q('.contact-line').slice(0, 1), [`Bandar Lampung, Lampung, Indonesia (Terbuka untuk Relokasi)`]],
+      [q('.role-title'), [`QA Tester | Penulis Teknis | Analis Proses Bisnis`]],
+      [q('h2'), [`Ringkasan Profesional`, `Keahlian Teknis`, `Pengalaman Kerja`, `Proyek Unggulan`, `Pengalaman Organisasi`, `Pendidikan`, `Prestasi`]],
+      [q('.summary'), [`Lulusan Manajemen Informatika (IPK 3,68/4,00) dengan pengalaman langsung dalam siklus hidup pengembangan perangkat lunak (SDLC) di bidang analisis proses bisnis, pengujian perangkat lunak manual, dan dokumentasi teknis. Berpengalaman mengubah proses manual atau tidak terstruktur menjadi sistem yang andal, termasuk sistem persediaan berbasis web dengan rekalkulasi stok otomatis dan aplikasi pembayaran PPOB yang diuji melalui 50+ test case. Terampil dalam perancangan test case, pelaporan bug, UAT, pengolahan data dengan Microsoft Excel, serta penulisan dokumentasi yang jelas bagi developer dan pemangku kepentingan. Teliti, adaptif, dan siap berkontribusi dalam tim QA, dokumentasi, dan perbaikan proses.`]],
+      [q('.skills-row'), [
+        `<span class="label">Pengujian &amp; QA:</span> Perancangan Test Scenario &amp; Test Case, Manual Testing, Functional Testing, Black Box Testing, System Testing, User Acceptance Testing (UAT), Pelaporan Bug`,
+        `<span class="label">Dokumentasi:</span> Dokumentasi Teknis, Laporan Pengujian (Test Report), Test Plan, Dokumentasi Proyek, Analisis Kebutuhan Bisnis`,
+        `<span class="label">Proses &amp; Analisis:</span> Analisis Proses Bisnis, Perancangan Alur Kerja (Workflow), Otomasi Proses, Software Development Life Cycle (SDLC), Agile`,
+        `<span class="label">Data &amp; Tools:</span> Pengolahan &amp; Pemantauan Data, Microsoft Excel, SQL (MySQL), Laravel (PHP), Google Workspace, Microsoft Office`]],
+      [q('.entry-header > span:first-child'), [`Pengembang Web`, `Magang Pengembang Web`, `Penguji Perangkat Lunak`, `Panitia Inti, Bendahara Pelaksana`]],
+      [q('.dates'), [`Oktober 2025 - Agustus 2026`, `Juni 2025 - Agustus 2025`, `Maret 2026 - Juli 2026`]],
+      [q('.entry-sub'), [
+        `Satgas P4GN - Universitas Lampung, Bandar Lampung, Indonesia`,
+        `BPKAD, Lampung Tengah, Indonesia`,
+        `DoriPay - Sistem Payment Point Online Bank (PPOB) | Penguji Perangkat Lunak Manual`,
+        `HIMAKOM Unila - "Project Showcase 2024", Bandar Lampung, Indonesia`]],
+      [q('li'), [
+        `Menganalisis kebutuhan tiga peran pengguna (Klien, Konselor, Admin) dan menerjemahkannya menjadi spesifikasi fungsional serta skenario yang dapat diuji mengikuti proses SDLC, sehingga platform sesuai dengan kebutuhan setiap peran.`,
+        `Menjalankan Black Box Testing dan User Acceptance Testing (UAT), mengidentifikasi dan melaporkan bug sebelum rilis, serta menghasilkan aplikasi yang aman, sesuai kebijakan privasi, dan terkelola terpusat (satgasp4gn.unila.ac.id).`,
+        `Menganalisis proses pencatatan stok manual dan merancang arsitektur sistem manajemen persediaan sebagai penggantinya.`,
+        `Membangun aplikasi full-stack dengan Laravel (PHP 8.3) dan MySQL menggunakan metodologi Agile, dilengkapi dashboard real-time dan rekalkulasi stok otomatis, lalu menyempurnakannya berdasarkan masukan langsung pengguna, sehingga pencatatan dan pemantauan stok menjadi lebih akurat dan efisien.`,
+        `Menguji 8 modul kritis aplikasi pembayaran digital, meliputi pembelian, top-up saldo melalui Tripay, riwayat transaksi, dan keuangan, untuk mengurangi risiko bug pada alur transaksi keuangan.`,
+        `Merancang dan menjalankan 50+ test case serta mendokumentasikan temuan, sehingga bug pada alur pembelian, integrasi payment gateway, dan pencatatan transaksi terungkap dan transaksi keuangan stabil sebelum rilis.`,
+        `Merancang rencana anggaran biaya (RAB), mengelola arus kas, dan menjaga dokumentasi keuangan yang lengkap untuk "Project Showcase 2024", sekaligus membantu menyusun konsep dan alur acara.`,
+        `Mengevaluasi pelaksanaan acara terhadap alur dan anggaran yang direncanakan, sehingga pameran berjalan lancar, efisien secara anggaran, dan memenuhi ekspektasi pemangku kepentingan.`,
+        `Mengembangkan konsep "WONTASTIC" berupa wonton ayam tanpa pengawet dengan pemasaran digital dan layanan antar, untuk menyediakan makanan sehat dan praktis bagi mahasiswa dan pekerja kantoran.`,
+        `Menganalisis kelayakan operasional dan menyusun rencana bisnis dengan target 10.800 unit pada tahun pertama, ROI 174,9%, dan periode pengembalian modal 1,26 bulan.`]],
+      [q('.edu-block p'), [
+        `<strong>D3 - Manajemen Informatika</strong>`,
+        `Universitas Lampung, Bandar Lampung, Indonesia`,
+        `2023 - 2026&nbsp;&nbsp;|&nbsp;&nbsp;IPK: 3,68 / 4,00`,
+        `Sertifikasi: English Proficiency Test (EPT), Universitas Lampung - Skor: 490 (Berlaku Juli 2026 - Juli 2028)`]],
+      [q('.entry-sub-inline'), [`<strong>Finalis 10 Besar - Kompetisi Wirausaha Muda Pemula, FMIPA Universitas Lampung</strong>`]]
+    ];
+    var current = 'en';
+    window.toggleLang = function () {
+      current = current === 'en' ? 'id' : 'en';
+      sets.forEach(function (s) {
+        s[0].forEach(function (el, i) {
+          if (el.getAttribute('data-en') === null) el.setAttribute('data-en', el.innerHTML);
+          if (current === 'id' && s[1][i] !== undefined) el.innerHTML = s[1][i];
+          else el.innerHTML = el.getAttribute('data-en');
+        });
+      });
+      document.documentElement.lang = current;
+      var b = document.getElementById('langBtn');
+      b.textContent = current === 'en' ? 'ID' : 'EN';
+      b.title = current === 'en' ? 'Terjemahkan ke Bahasa Indonesia' : 'Translate to English';
+    };
+  })();
+  </script>
 
 </body>
 </html>
